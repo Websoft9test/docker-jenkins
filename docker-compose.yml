@@ -2,21 +2,22 @@ version: '3.8'
 
 services:
   jenkins:
-    container_name: ${APP_CONTAINER_NAME}
+    container_name: ${APP_NAME}
     image: jenkins/jenkins:${APP_VERSION}
     environment:
       JAVA_OPTS: "-Djava.awt.headless=true"
+      JENKINS_OPTS="--prefix=/jenkins"
     user: root
     restart: always
     ports:
-      - "50000:50000"
-      - "${APP_PORT}:8080"
+      - "$APP_JENKINS_SLAVE_AGENT_PORT:50000"
+      - "$APP_PORT:8080"
     volumes:
       - jenkins:/var/jenkins_home
 
 networks:
   default:
-      name: ${APP_NETWORK}
+      name: ${APP_NAME}
 
 volumes:
   jenkins:

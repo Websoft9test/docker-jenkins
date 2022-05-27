@@ -11,14 +11,5 @@
     "memory": "1",
     "disk": "1",
     "url": "https://www.jenkins.io/doc/book/installing/docker/"
-  },
-  "services":[
-    {
-      "name": "jenkins",
-      "port": "9001",
-      "description_cn": "浏览器访问 Jenkins",
-      "description_en": "access Jenkins by browse",
-      "required": "Y"
-    }
-  ]
+  }
 }
