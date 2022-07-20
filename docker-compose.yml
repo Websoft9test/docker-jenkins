@@ -6,7 +6,6 @@ services:
     image: jenkins/jenkins:${APP_VERSION}
     environment:
       JAVA_OPTS: "-Djava.awt.headless=true"
-      JENKINS_OPTS: "--prefix=/jenkins"
     user: root
     restart: always
     ports:
