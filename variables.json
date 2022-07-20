@@ -1,7 +1,7 @@
 {
   "name": "jenkins",
   "trademark": "Jenkins",
-  "installpath": "/data/wwwroot/jenkins",
+  "installpath": "/data/apps/jenkins",
   "compose_file": "docker-compose.yml",
   "env_file": ".env",
   "fork_url": "https://github.com/jenkinsci/docker.git",
