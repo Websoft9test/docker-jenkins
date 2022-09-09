@@ -10,7 +10,7 @@ services:
     restart: always
     ports:
       - "$APP_JENKINS_SLAVE_AGENT_PORT:50000"
-      - "$APP_PORT:8080"
+      - "$APP_HTTP_PORT:8080"
     volumes:
       - jenkins:/var/jenkins_home
 
