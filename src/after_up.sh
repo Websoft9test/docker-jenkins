@@ -4,4 +4,3 @@ clear
 
 sleep 30s
 echo "APP_PASSWORD=$1" >> /data/apps/jenkins/.env
-echo "APP_PASSWORD=$1" >> /credentials/password.txt
