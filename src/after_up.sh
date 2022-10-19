@@ -7,5 +7,5 @@ do
     sleep 3s
     echo "initing..." >> /tmp/init_debug.txt
 done
-jenkins_pwd=$(sudo docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword)
+jenkins_pwd=$(sudo cat /data/apps/jenkins/data/jenkins/secrets/initialAdminPassword)
 echo "APP_PASSWORD=$jenkins_pwd" >> /data/apps/jenkins/.env
