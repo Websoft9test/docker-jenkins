@@ -2,6 +2,7 @@
 export PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
 clear
 
+echo "get password ..." >> /tmp/init_debug.txt
 while [  ! -f /data/apps/jenkins/data/jenkins/secrets/initialAdminPassword ]
 do
     sleep 3s
